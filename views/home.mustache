@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<body>
+
+
+<p>
+  Solve:
+
+  {{ #letters }}
+    {{ . }}
+  {{ /letters }}
+</p>
+
+<form  method="post" action="/guess">
+  <input type="text" name="letter" placeholder="Guess">
+</form>
+
+
+
+<form method="get" action="/logout">
+      <input type="submit" value="New Game">
+</form>
+
+
+<p> {{theGuesses}} out of 8 guesses </p>
+
+</body>
+</html>
